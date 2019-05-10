@@ -1,6 +1,6 @@
 # LOAN CALCULATOR
 
-# GET 
+# GET
 # loan amount
 # annual percentage rate (APR)
 # loan duration
@@ -22,8 +22,8 @@ prompt("Welcome to the Loan Calculator!")
 prompt("Please enter your name: ")
 
 name = ''
-loop do 
-  name = gets.chomp.capitalize 
+loop do
+  name = gets.chomp.capitalize
 
   if name.empty?
     prompt("Please enter a valid name.")
@@ -35,11 +35,10 @@ end
 prompt("Welcome, #{name}!")
 
 # main loop
-loop do 
-
+loop do
   # loan amount
   loan_amount = ''
-  loop do 
+  loop do
     prompt("Please enter your loan amount: ")
     loan_amount = gets.chomp
 
@@ -60,7 +59,7 @@ loop do
       break
     else
       prompt("Please enter a valid percentage")
-    end 
+    end
   end
 
   # loan in years
@@ -75,7 +74,6 @@ loop do
       prompt("Please enter a valid amount.")
     end
   end
-
 
   prompt("Calculating your monthly rate...")
 
